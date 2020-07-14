@@ -5,8 +5,8 @@
         <style>
             
             img{
-                width: 100%;
-                height: 100%;
+                width: 75%;
+                height: 75%;
                 object-fit: contain;
             }	
             
@@ -23,6 +23,7 @@
             }
             
             .bg {
+                z-index:-1;
                 position: fixed;
                 top: -50%;
                 left: -50%;
@@ -65,13 +66,38 @@
         
         <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
         <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         
     </head>
     
     <body align="center">
         
+        <img src="imagens/logo.png" alt="Gabsletobar">
         <div class="bg"></div>
-        <img src="imagens/logo.png" alt="Gabsletobar">	
+        
+        <br>
+        
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Information</button>
+        
+        <div id="id01" class="w3-modal" align="left">
+            <div class="w3-modal-content w3-animate-zoom w3-card-4">
+                <header class="w3-container w3-teal"> 
+                    <span onclick="document.getElementById('id01').style.display='none'" 
+                          class="w3-button w3-display-topright">&times;</span>
+                    <h2>Hello!</h2>
+                </header>
+                <div class="w3-container">
+                    <p><b>Welcome to my website!</b></p>
+                    <p>Great stuff is coming and I hope you will enjoy it.</p>
+                    <p>Have fun living and playing!</p>
+                    <hr>
+                    <p><b>https://gabsletobar.github.io/</b> and <b>https://gabsletobar.netlify.app/</b></p>
+                </div>
+                <footer class="w3-container w3-teal" align="right">
+                    <p>Gabs :) </p>
+                </footer>
+            </div>
+        </div>
         
     </body>
 </html>
